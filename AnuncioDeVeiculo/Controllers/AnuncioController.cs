@@ -1,4 +1,4 @@
-﻿using AnuncioDeVeiculo.API;
+using AnuncioDeVeiculo.API;
 using AnuncioDeVeiculo.Contexts;
 using AnuncioDeVeiculo.Models;
 using AnuncioDeVeiculo.Others;
@@ -149,22 +149,6 @@ namespace AnuncioDeVeiculo.Controllers
 
             return RedirectToAction("Listar");
         }
-
-        //[AllowCrossSiteJson]
-        //public ActionResult GetListaModelos(int MarcaId)
-        //{
-        //    var listaModelos = new APIAccess().GetModelos(MarcaId);
-
-        //    return Json(listaModelos, JsonRequestBehavior.AllowGet);
-        //}
-
-        //[AllowCrossSiteJson]
-        //public ActionResult GetListaVersoes(int ModeloId)
-        //{
-        //    var listaVersoes = new APIAccess().GetVersoes(ModeloId);
-
-        //    return Json(listaVersoes, JsonRequestBehavior.AllowGet);
-        //}
 
         public JsonResult GetListaModelos(int MarcaId)
         {
